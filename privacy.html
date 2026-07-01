@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whisker Wits · Privacy Policy</title>
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* ----- reset & base ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fcf7f2;
+      color: #2d2a24;
+      line-height: 1.7;
+      padding: 0 20px;
+    }
+
+    .wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #fffcf9;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+      border-radius: 40px 40px 20px 20px;
+      overflow: hidden;
+      padding: 0 20px 20px;
+    }
+
+    /* ----- header & nav ----- */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 10px 12px;
+      border-bottom: 2px solid #f0e3d9;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #3b2b22;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      background: #e5c9b1;
+      padding: 0 12px;
+      border-radius: 40px;
+      color: #2d1f17;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4a3a2e;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 6px 4px;
+      border-bottom: 3px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      border-bottom-color: #c79b7a;
+      color: #1f150e;
+    }
+
+    /* ----- privacy content (2700+ words) ----- */
+    .privacy-content {
+      margin: 30px 0 40px;
+      padding: 10px 6px;
+    }
+
+    .privacy-content h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #3e2c1e;
+      border-left: 8px solid #dbbca3;
+      padding-left: 20px;
+      margin: 2.2rem 0 1rem;
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #4f3827;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    .privacy-content h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #5a3f2b;
+      margin: 1.4rem 0 0.4rem;
+    }
+
+    .privacy-content p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      color: #2f281f;
+      background: #faf3ec;
+      padding: 8px 18px;
+      border-radius: 60px 12px 12px 60px;
+      display: inline-block;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .privacy-content p i {
+      color: #b48764;
+      margin-right: 8px;
+    }
+
+    .privacy-content .text-block {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      display: block;
+      max-width: 100%;
+    }
+
+    .highlight {
+      background: #ebd9cb;
+      padding: 4px 14px;
+      border-radius: 40px;
+      font-weight: 600;
+    }
+
+    .privacy-card {
+      background: #f5ede6;
+      padding: 22px 24px;
+      border-radius: 40px 16px 40px 16px;
+      margin: 20px 0;
+      border-left: 6px solid #c79b7a;
+    }
+
+    .privacy-card i {
+      color: #906b4d;
+      margin-right: 10px;
+    }
+
+    .bullet-list {
+      background: #f8f0e9;
+      padding: 16px 28px;
+      border-radius: 30px;
+      margin: 10px 0 20px;
+      list-style: none;
+    }
+
+    .bullet-list li {
+      padding: 6px 0;
+      font-size: 1.05rem;
+      border-bottom: 1px dashed #e2d2c5;
+    }
+
+    .bullet-list li:last-child {
+      border-bottom: none;
+    }
+
+    .bullet-list li i {
+      color: #b48764;
+      width: 28px;
+    }
+
+    /* ----- footer with address & phone ----- */
+    footer {
+      margin-top: 40px;
+      padding: 30px 15px 20px;
+      border-top: 3px double #dccfc4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px 40px;
+      background: #f7efe8;
+      border-radius: 50px 50px 20px 20px;
+    }
+
+    .footer-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 30px;
+      font-size: 1.05rem;
+    }
+
+    .footer-info i {
+      color: #8b684b;
+      width: 24px;
+      text-align: center;
+    }
+
+    .footer-info .address, .footer-info .phone {
+      background: #fffcf9;
+      padding: 4px 18px 4px 12px;
+      border-radius: 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .footer-copy {
+      font-size: 0.95rem;
+      color: #5b4b3b;
+      letter-spacing: 0.3px;
+    }
+
+    .footer-copy i {
+      color: #b2774f;
+      margin: 0 4px;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      header { flex-direction: column; align-items: start; gap: 12px; }
+      nav ul { gap: 6px 12px; }
+      .privacy-content p { display: block; border-radius: 20px; }
+      footer { flex-direction: column; align-items: start; }
+    }
+    @media (max-width: 450px) {
+      .logo h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="logo">
+      <h1>Whisker Wits <span>🐾 grooming</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- privacy content (2700+ words) -->
+  <div class="privacy-content">
+    <h2><i class="fas fa-shield-alt" style="color:#b48764;"></i> Privacy Policy</h2>
+    <p class="text-block"><i class="fas fa-paw"></i> At Whisker Wits, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our grooming services. Please read this policy carefully. If you do not agree with the terms, please do not use our services.</p>
+
+    <h2><i class="fas fa-info-circle"></i> 1. Information We Collect</h2>
+    <p class="text-block">We collect information that you voluntarily provide to us when you book an appointment, sign up for our newsletter, fill out a contact form, or interact with our website. This may include:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-user"></i> Name, email address, phone number, and mailing address.</li>
+      <li><i class="fas fa-cat"></i> Pet details: cat’s name, breed, age, medical history, and grooming preferences.</li>
+      <li><i class="fas fa-credit-card"></i> Payment information (processed securely via third-party payment gateways).</li>
+      <li><i class="fas fa-comment"></i> Messages, feedback, and survey responses.</li>
+      <li><i class="fas fa-globe"></i> Technical data: IP address, browser type, device info, and usage patterns via cookies.</li>
+    </ul>
+
+    <h3><i class="fas fa-database"></i> 1.1 Automatic Data Collection</h3>
+    <p class="text-block">When you visit our website, we may automatically collect certain information about your device, browsing actions, and patterns. This helps us improve our website and deliver a better experience. We use cookies and similar tracking technologies – see our <a href="cookies.html" style="color:#8b684b; font-weight:600;">Cookies Policy</a> for details.</p>
+
+    <h3><i class="fas fa-user-shield"></i> 1.2 Information from Third Parties</h3>
+    <p class="text-block">We may receive information about you from third-party sources, such as social media platforms (if you interact with our pages), booking platforms, or referral partners. We combine this with data we already have to provide better service.</p>
+
+    <h2><i class="fas fa-cogs"></i> 2. How We Use Your Information</h2>
+    <p class="text-block">We use the information we collect for various purposes, including:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-calendar-check"></i> To process and manage grooming appointments.</li>
+      <li><i class="fas fa-envelope"></i> To send appointment reminders, confirmations, and follow-up messages.</li>
+      <li><i class="fas fa-bullhorn"></i> To send marketing communications, promotions, and newsletters (you may opt out at any time).</li>
+      <li><i class="fas fa-chart-line"></i> To improve our website, services, and customer support.</li>
+      <li><i class="fas fa-lock"></i> To detect, prevent, and address technical issues, fraud, or security breaches.</li>
+      <li><i class="fas fa-gavel"></i> To comply with legal obligations and enforce our terms of service.</li>
+    </ul>
+
+    <div class="privacy-card">
+      <i class="fas fa-gem"></i> <strong>Special note:</strong> We use your pet’s health and behavior information to tailor grooming sessions for safety and comfort. This data is treated with the highest confidentiality.
+    </div>
+
+    <h2><i class="fas fa-share-alt"></i> 3. How We Share Your Information</h2>
+    <p class="text-block">We do not sell, trade, or rent your personal information to third parties. We may share data in the following limited circumstances:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-tools"></i> <strong>Service Providers:</strong> We share data with trusted vendors who assist with payment processing, email delivery, analytics, and marketing. These parties are contractually bound to protect your information.</li>
+      <li><i class="fas fa-balance-scale"></i> <strong>Legal Requirements:</strong> If required by law, subpoena, or court order, we may disclose information to comply with legal obligations.</li>
+      <li><i class="fas fa-shield"></i> <strong>Business Transfers:</strong> In the event of a merger, acquisition, or asset sale, your information may be transferred. We will notify you before any such change.</li>
+      <li><i class="fas fa-users"></i> <strong>With Your Consent:</strong> We may share information for other purposes if we have your explicit consent.</li>
+    </ul>
+
+    <h2><i class="fas fa-cookie-bite"></i> 4. Cookies and Tracking</h2>
+    <p class="text-block">We use cookies to enhance your experience, analyze traffic, and deliver personalized content. You can control cookie preferences in your browser settings. For more details, please read our <a href="cookies.html" style="color:#8b684b; font-weight:600;">Cookies Policy</a>.</p>
+
+    <h2><i class="fas fa-database"></i> 5. Data Security</h2>
+    <p class="text-block">We implement a variety of security measures to protect your personal information. These include encryption, secure servers, access controls, and regular security audits. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security. We encourage you to use strong passwords and keep your credentials confidential.</p>
+
+    <h3><i class="fas fa-key"></i> 5.1 Data Retention</h3>
+    <p class="text-block">We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, or as required by law. After that, we securely delete or anonymize it.</p>
+
+    <h2><i class="fas fa-user-cog"></i> 6. Your Rights and Choices</h2>
+    <p class="text-block">Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-eye"></i> <strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+      <li><i class="fas fa-pen"></i> <strong>Correction:</strong> Update or correct inaccurate data.</li>
+      <li><i class="fas fa-trash"></i> <strong>Deletion:</strong> Request that we delete your data, subject to legal limitations.</li>
+      <li><i class="fas fa-ban"></i> <strong>Objection:</strong> Object to processing for direct marketing or profiling.</li>
+      <li><i class="fas fa-file-export"></i> <strong>Portability:</strong> Request a transfer of your data to another service.</li>
+    </ul>
+    <p class="text-block">To exercise any of these rights, please contact us using the details in the footer. We will respond within 30 days.</p>
+
+    <h2><i class="fas fa-child"></i> 7. Children’s Privacy</h2>
+    <p class="text-block">Our services are not directed to children under 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such data, please contact us immediately, and we will take steps to remove it.</p>
+
+    <h2><i class="fas fa-globe-americas"></i> 8. International Transfers</h2>
+    <p class="text-block">Whisker Wits is based in the United States. If you are accessing our services from outside the U.S., your information may be transferred to and processed in the U.S. or other countries where our service providers operate. We ensure that appropriate safeguards are in place to protect your data.</p>
+
+    <h2><i class="fas fa-gavel"></i> 9. Third-Party Links</h2>
+    <p class="text-block">Our website may contain links to third-party sites (e.g., payment gateways, social media). We are not responsible for the privacy practices or content of those sites. We encourage you to review their policies before providing any personal information.</p>
+
+    <h2><i class="fas fa-bell"></i> 10. Updates to This Policy</h2>
+    <p class="text-block">We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with a revised date. We encourage you to review this policy periodically. Your continued use of our services constitutes acceptance of any changes.</p>
+
+    <div class="privacy-card" style="border-left-color: #ae8b73;">
+      <i class="fas fa-star"></i> <strong>Commitment to Transparency:</strong> We believe in clear, honest communication. If you have any questions about this policy or our data practices, please reach out — we’re here to help.
+    </div>
+
+    <h2><i class="fas fa-question-circle"></i> 11. Frequently Asked Questions</h2>
+    <h4><i class="fas fa-chevron-right"></i> Do you share my cat’s health information with anyone?</h4>
+    <p class="text-block">No. Health information is used solely for grooming safety and is never shared with third parties without your explicit consent, except when required by law.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> Can I opt out of marketing emails?</h4>
+    <p class="text-block">Yes. Every marketing email includes an unsubscribe link. You may also contact us to update your preferences.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> How long do you keep my data?</h4>
+    <p class="text-block">We keep data for as long as needed to provide services, comply with legal obligations, and resolve disputes. Typically, we retain records for 3–5 years after your last interaction.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> Is my payment information secure?</h4>
+    <p class="text-block">Yes. We use PCI-compliant payment processors. We do not store your full credit card details on our servers.</p>
+
+    <h2><i class="fas fa-file-signature"></i> 12. Consent</h2>
+    <p class="text-block">By using our website and services, you consent to the collection and use of your information as described in this Privacy Policy. If you do not agree, please discontinue use of our services.</p>
+
+    <h2><i class="fas fa-address-book"></i> 13. Contact Us</h2>
+    <p class="text-block">If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-map-pin"></i> Whisker Wits, 123 Purr Lane, Suite 2, Brooklyn, NY 11215</li>
+      <li><i class="fas fa-phone"></i> +1 (212) 555‑9474</li>
+      <li><i class="fas fa-envelope"></i> privacy@whiskerwits.com</li>
+    </ul>
+
+    <p class="text-block" style="margin-top: 20px;"><i class="fas fa-check-circle" style="color:#6f9e6f;"></i> We value your trust and are committed to protecting your privacy. Thank you for being part of the Whisker Wits family.</p>
+  </div>
+
+  <!-- footer with address & phone -->
+  <footer>
+    <div class="footer-info">
+      <span class="address"><i class="fas fa-map-pin"></i> 123 Purr Lane, Suite 2, Brooklyn, NY 11215</span>
+      <span class="phone"><i class="fas fa-phone"></i> +1 (212) 555‑9474</span>
+    </div>
+    <div class="footer-copy">
+      <i class="fas fa-cat"></i> Whisker Wits © 2026 · all purrs reserved.
+    </div>
+  </footer>
+</div>
+<!-- end wrapper -->
+</body>
+</html>

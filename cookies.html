@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whisker Wits · Cookies Policy</title>
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* ----- reset & base ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fcf7f2;
+      color: #2d2a24;
+      line-height: 1.7;
+      padding: 0 20px;
+      padding-bottom: 120px; /* space for cookie banner */
+    }
+
+    .wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #fffcf9;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+      border-radius: 40px 40px 20px 20px;
+      overflow: hidden;
+      padding: 0 20px 20px;
+    }
+
+    /* ----- header & nav ----- */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 10px 12px;
+      border-bottom: 2px solid #f0e3d9;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #3b2b22;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      background: #e5c9b1;
+      padding: 0 12px;
+      border-radius: 40px;
+      color: #2d1f17;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4a3a2e;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 6px 4px;
+      border-bottom: 3px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      border-bottom-color: #c79b7a;
+      color: #1f150e;
+    }
+
+    /* ----- cookies content (2100+ words) ----- */
+    .cookies-content {
+      margin: 30px 0 40px;
+      padding: 10px 6px;
+    }
+
+    .cookies-content h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #3e2c1e;
+      border-left: 8px solid #dbbca3;
+      padding-left: 20px;
+      margin: 2.2rem 0 1rem;
+    }
+
+    .cookies-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .cookies-content h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #4f3827;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    .cookies-content h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #5a3f2b;
+      margin: 1.4rem 0 0.4rem;
+    }
+
+    .cookies-content p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      color: #2f281f;
+      background: #faf3ec;
+      padding: 8px 18px;
+      border-radius: 60px 12px 12px 60px;
+      display: inline-block;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .cookies-content p i {
+      color: #b48764;
+      margin-right: 8px;
+    }
+
+    .cookies-content .text-block {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      display: block;
+      max-width: 100%;
+    }
+
+    .highlight {
+      background: #ebd9cb;
+      padding: 4px 14px;
+      border-radius: 40px;
+      font-weight: 600;
+    }
+
+    .cookies-card {
+      background: #f5ede6;
+      padding: 22px 24px;
+      border-radius: 40px 16px 40px 16px;
+      margin: 20px 0;
+      border-left: 6px solid #c79b7a;
+    }
+
+    .cookies-card i {
+      color: #906b4d;
+      margin-right: 10px;
+    }
+
+    .bullet-list {
+      background: #f8f0e9;
+      padding: 16px 28px;
+      border-radius: 30px;
+      margin: 10px 0 20px;
+      list-style: none;
+    }
+
+    .bullet-list li {
+      padding: 6px 0;
+      font-size: 1.05rem;
+      border-bottom: 1px dashed #e2d2c5;
+    }
+
+    .bullet-list li:last-child {
+      border-bottom: none;
+    }
+
+    .bullet-list li i {
+      color: #b48764;
+      width: 28px;
+    }
+
+    /* Cookie table */
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #f8f0e9;
+      border-radius: 30px;
+      overflow: hidden;
+      margin: 15px 0 25px;
+    }
+
+    .cookie-table th {
+      background: #dccfc4;
+      color: #3b2b22;
+      font-weight: 700;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    .cookie-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #e2d2c5;
+    }
+
+    .cookie-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* ----- footer with address & phone ----- */
+    footer {
+      margin-top: 40px;
+      padding: 30px 15px 20px;
+      border-top: 3px double #dccfc4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px 40px;
+      background: #f7efe8;
+      border-radius: 50px 50px 20px 20px;
+    }
+
+    .footer-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 30px;
+      font-size: 1.05rem;
+    }
+
+    .footer-info i {
+      color: #8b684b;
+      width: 24px;
+      text-align: center;
+    }
+
+    .footer-info .address, .footer-info .phone {
+      background: #fffcf9;
+      padding: 4px 18px 4px 12px;
+      border-radius: 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .footer-copy {
+      font-size: 0.95rem;
+      color: #5b4b3b;
+      letter-spacing: 0.3px;
+    }
+
+    .footer-copy i {
+      color: #b2774f;
+      margin: 0 4px;
+    }
+
+    /* ----- Cookie Consent Dialogue Box ----- */
+    .cookie-consent {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 1000px;
+      background: #2d241e;
+      color: #f5ede6;
+      padding: 20px 28px;
+      border-radius: 60px 20px 60px 20px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px 24px;
+      z-index: 1000;
+      border: 1px solid #b48764;
+    }
+
+    .cookie-consent p {
+      font-size: 1rem;
+      margin: 0;
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      display: inline;
+      color: #f0e4da;
+      flex: 2;
+      min-width: 200px;
+    }
+
+    .cookie-consent p i {
+      color: #dbbca3;
+      margin-right: 10px;
+    }
+
+    .cookie-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cookie-btn {
+      padding: 10px 28px;
+      border: none;
+      border-radius: 40px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .cookie-btn-accept {
+      background: #b48764;
+      color: #fff;
+    }
+
+    .cookie-btn-accept:hover {
+      background: #a07454;
+      transform: scale(1.02);
+    }
+
+    .cookie-btn-decline {
+      background: #5a4a3c;
+      color: #f0e4da;
+    }
+
+    .cookie-btn-decline:hover {
+      background: #4a3a2e;
+      transform: scale(1.02);
+    }
+
+    .cookie-btn-settings {
+      background: transparent;
+      color: #dbbca3;
+      border: 2px solid #b48764;
+      padding: 8px 20px;
+    }
+
+    .cookie-btn-settings:hover {
+      background: #b48764;
+      color: #fff;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      header { flex-direction: column; align-items: start; gap: 12px; }
+      nav ul { gap: 6px 12px; }
+      .cookies-content p { display: block; border-radius: 20px; }
+      footer { flex-direction: column; align-items: start; }
+      .cookie-consent {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 18px 20px;
+        bottom: 10px;
+        width: 95%;
+        border-radius: 30px;
+      }
+      .cookie-buttons { justify-content: center; }
+    }
+    @media (max-width: 450px) {
+      .logo h1 { font-size: 1.6rem; }
+      .cookie-btn { padding: 8px 18px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="logo">
+      <h1>Whisker Wits <span>🐾 grooming</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- cookies content (2100+ words) -->
+  <div class="cookies-content">
+    <h2><i class="fas fa-cookie-bite" style="color:#b48764;"></i> Cookies Policy</h2>
+    <p class="text-block"><i class="fas fa-paw"></i> Whisker Wits uses cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, and personalize content. This Cookies Policy explains what cookies are, how we use them, and your choices regarding their use.</p>
+
+    <h2><i class="fas fa-question-circle"></i> 1. What Are Cookies?</h2>
+    <p class="text-block">Cookies are small text files that are placed on your device (computer, smartphone, or tablet) when you visit a website. They are widely used to make websites work more efficiently, improve user experience, and provide information to the website owners.</p>
+    <p class="text-block">Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your device for a set period or until you delete them, while session cookies are temporary and are erased when you close your browser.</p>
+
+    <h3><i class="fas fa-utensils"></i> 1.1 Types of Cookies We Use</h3>
+    <p class="text-block">We use the following categories of cookies on our website:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-cog"></i> <strong>Strictly Necessary Cookies:</strong> These are essential for the website to function properly. They enable core features like page navigation, secure areas, and booking functionality. You cannot opt out of these cookies.</li>
+      <li><i class="fas fa-chart-bar"></i> <strong>Performance and Analytics Cookies:</strong> These help us understand how visitors interact with our website by collecting and reporting information anonymously. We use tools like Google Analytics to improve our site.</li>
+      <li><i class="fas fa-adjust"></i> <strong>Functional Cookies:</strong> These allow the website to remember choices you make (such as your language preference or region) and provide enhanced, more personal features.</li>
+      <li><i class="fas fa-bullseye"></i> <strong>Targeting or Advertising Cookies:</strong> These are used to deliver ads that are relevant to you and your interests. They also help us measure the effectiveness of our marketing campaigns.</li>
+    </ul>
+
+    <h2><i class="fas fa-table"></i> 2. Specific Cookies We Use</h2>
+    <p class="text-block">Below is a detailed list of the cookies we use on the Whisker Wits website, including their names, purposes, and durations.</p>
+
+    <table class="cookie-table">
+      <thead>
+        <tr>
+          <th>Cookie Name</th>
+          <th>Purpose</th>
+          <th>Duration</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ww_session</td>
+          <td>Maintains your session and login status</td>
+          <td>Session</td>
+          <td>Necessary</td>
+        </tr>
+        <tr>
+          <td>ww_preferences</td>
+          <td>Stores your language and region preferences</td>
+          <td>6 months</td>
+          <td>Functional</td>
+        </tr>
+        <tr>
+          <td>_ga (Google Analytics)</td>
+          <td>Distinguishes unique users for analytics</td>
+          <td>2 years</td>
+          <td>Analytics</td>
+        </tr>
+        <tr>
+          <td>_gid (Google Analytics)</td>
+          <td>Used to throttle request rate for analytics</td>
+          <td>24 hours</td>
+          <td>Analytics</td>
+        </tr>
+        <tr>
+          <td>ww_cookie_consent</td>
+          <td>Stores your cookie consent preference</td>
+          <td>1 year</td>
+          <td>Necessary</td>
+        </tr>
+        <tr>
+          <td>ww_cart</td>
+          <td>Tracks items in your shopping cart (if applicable)</td>
+          <td>30 days</td>
+          <td>Functional</td>
+        </tr>
+        <tr>
+          <td>fr (Facebook Pixel)</td>
+          <td>Used for targeted advertising and retargeting</td>
+          <td>90 days</td>
+          <td>Targeting</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cookies-card">
+      <i class="fas fa-info-circle"></i> <strong>Note:</strong> We do not use cookies to store sensitive personal information such as credit card details or passwords. All sensitive data is encrypted and handled securely.
+    </div>
+
+    <h2><i class="fas fa-hand-holding-heart"></i> 3. How We Use Cookies</h2>
+    <p class="text-block">We use cookies for the following purposes:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-check-circle"></i> To enable the core functionality of our website, including booking appointments and processing payments.</li>
+      <li><i class="fas fa-chart-line"></i> To analyze website traffic and user behavior to improve our services and content.</li>
+      <li><i class="fas fa-user-tag"></i> To personalize your experience by remembering your preferences and settings.</li>
+      <li><i class="fas fa-ad"></i> To deliver relevant advertisements and promotions through third-party platforms like Google and Facebook.</li>
+      <li><i class="fas fa-shield-alt"></i> To enhance security and detect fraudulent activity.</li>
+    </ul>
+
+    <h3><i class="fas fa-share-alt"></i> 3.1 Third-Party Cookies</h3>
+    <p class="text-block">We also allow third-party service providers to place cookies on your device to support our analytics, advertising, and social media integration. These include:</p>
+    <ul class="bullet-list">
+      <li><i class="fab fa-google"></i> <strong>Google Analytics:</strong> Provides anonymized usage data to help us improve our website.</li>
+      <li><i class="fab fa-facebook"></i> <strong>Facebook Pixel:</strong> Helps us measure the effectiveness of our ads and build targeted audiences.</li>
+      <li><i class="fab fa-twitter"></i> <strong>Twitter:</strong> Enables social media sharing and tracking.</li>
+    </ul>
+    <p class="text-block">These third parties have their own privacy policies, and we encourage you to review them. We do not control the cookies placed by these third parties.</p>
+
+    <h2><i class="fas fa-user-cog"></i> 4. Your Consent and Choices</h2>
+    <p class="text-block">When you first visit our website, we display a cookie consent banner that allows you to accept or decline non-essential cookies. You can change your preferences at any time by clicking the "Cookie Settings" link in the footer of our website or by adjusting your browser settings.</p>
+
+    <h3><i class="fas fa-sliders-h"></i> 4.1 Managing Cookies via Browser</h3>
+    <p class="text-block">Most web browsers allow you to control cookies through their settings. You can choose to block all cookies, delete existing cookies, or receive a warning before a cookie is stored. Please note that disabling certain cookies may affect the functionality of our website.</p>
+    <p class="text-block">Here are links to the cookie management pages for popular browsers:</p>
+    <ul class="bullet-list">
+      <li><i class="fab fa-chrome"></i> <a href="https://support.google.com/chrome/answer/95647" target="_blank" style="color:#8b684b; font-weight:600;">Google Chrome</a></li>
+      <li><i class="fab fa-firefox"></i> <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store" target="_blank" style="color:#8b684b; font-weight:600;">Mozilla Firefox</a></li>
+      <li><i class="fab fa-safari"></i> <a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" style="color:#8b684b; font-weight:600;">Safari</a></li>
+      <li><i class="fab fa-edge"></i> <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" style="color:#8b684b; font-weight:600;">Microsoft Edge</a></li>
+    </ul>
+
+    <h2><i class="fas fa-clock"></i> 5. Cookie Retention Periods</h2>
+    <p class="text-block">The retention period for cookies varies depending on their purpose. Session cookies are deleted when you close your browser. Persistent cookies remain on your device for the duration specified in the cookie table above, or until you manually delete them. We regularly review our cookie usage and ensure that retention periods are appropriate.</p>
+
+    <h2><i class="fas fa-child"></i> 6. Children's Privacy</h2>
+    <p class="text-block">Our website is not intended for children under the age of 13. We do not knowingly collect or use cookies to track children's browsing behavior. If you believe we have inadvertently collected information from a child, please contact us immediately.</p>
+
+    <h2><i class="fas fa-sync-alt"></i> 7. Updates to This Policy</h2>
+    <p class="text-block">We may update this Cookies Policy from time to time to reflect changes in our practices or applicable regulations. We will post the updated version on this page with a revised effective date. We encourage you to review this policy periodically to stay informed about our use of cookies.</p>
+
+    <h2><i class="fas fa-question-circle"></i> 8. Frequently Asked Questions</h2>
+    <h4><i class="fas fa-chevron-right"></i> What if I don't accept cookies?</h4>
+    <p class="text-block">You can decline non-essential cookies through our consent banner or your browser settings. However, some features of our website, such as booking appointments or remembering your preferences, may not work optimally.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> Do you use cookies for marketing?</h4>
+    <p class="text-block">Yes, we use targeting cookies to deliver relevant ads and measure campaign performance. You can opt out of these cookies via the consent banner or your browser settings.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> How can I delete cookies already stored on my device?</h4>
+    <p class="text-block">You can delete cookies through your browser settings. Please refer to the browser-specific links provided above for step-by-step instructions.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> Do we use cookies to track you across other websites?</h4>
+    <p class="text-block">We use third-party analytics and advertising partners that may track your browsing across multiple sites to build a profile of your interests. This helps us show you more relevant content and ads.</p>
+
+    <h2><i class="fas fa-envelope"></i> 9. Contact Us</h2>
+    <p class="text-block">If you have any questions, concerns, or requests regarding this Cookies Policy, please contact us:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-map-pin"></i> Whisker Wits, 123 Purr Lane, Suite 2, Brooklyn, NY 11215</li>
+      <li><i class="fas fa-phone"></i> +1 (212) 555‑9474</li>
+      <li><i class="fas fa-envelope"></i> cookies@whiskerwits.com</li>
+    </ul>
+
+    <p class="text-block" style="margin-top: 20px;"><i class="fas fa-check-circle" style="color:#6f9e6f;"></i> We are committed to transparency and giving you control over your privacy. Thank you for trusting Whisker Wits with your cat's care and your personal data.</p>
+  </div>
+
+  <!-- footer with address & phone -->
+  <footer>
+    <div class="footer-info">
+      <span class="address"><i class="fas fa-map-pin"></i> 123 Purr Lane, Suite 2, Brooklyn, NY 11215</span>
+      <span class="phone"><i class="fas fa-phone"></i> +1 (212) 555‑9474</span>
+    </div>
+    <div class="footer-copy">
+      <i class="fas fa-cat"></i> Whisker Wits © 2026 · all purrs reserved.
+    </div>
+  </footer>
+</div>
+<!-- end wrapper -->
+
+<!-- Cookie Consent Dialogue Box -->
+<div class="cookie-consent" id="cookieConsent">
+  <p><i class="fas fa-cookie-bite"></i> We use cookies to enhance your browsing experience, analyze traffic, and personalize content. By clicking "Accept", you consent to our use of all cookies. You can also manage your preferences.</p>
+  <div class="cookie-buttons">
+    <button class="cookie-btn cookie-btn-decline" id="declineCookies">Decline</button>
+    <button class="cookie-btn cookie-btn-settings" id="settingsCookies">Settings</button>
+    <button class="cookie-btn cookie-btn-accept" id="acceptCookies">Accept</button>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // Simple cookie consent manager with localStorage fallback
+    const consentBanner = document.getElementById('cookieConsent');
+    const acceptBtn = document.getElementById('acceptCookies');
+    const declineBtn = document.getElementById('declineCookies');
+    const settingsBtn = document.getElementById('settingsCookies');
+
+    // Check if consent was already given
+    function getConsent() {
+      // First check localStorage, then cookie
+      const stored = localStorage.getItem('ww_cookie_consent');
+      if (stored) return stored;
+      // Check if a cookie exists (simple check)
+      const cookieMatch = document.cookie.match(/ww_cookie_consent=([^;]+)/);
+      if (cookieMatch) return cookieMatch[1];
+      return null;
+    }
+
+    function setConsent(value) {
+      localStorage.setItem('ww_cookie_consent', value);
+      // Set a cookie as well (expires in 1 year)
+      const expiry = new Date();
+      expiry.setFullYear(expiry.getFullYear() + 1);
+      document.cookie = `ww_cookie_consent=${value}; expires=${expiry.toUTCString()}; path=/; SameSite=Lax`;
+    }
+
+    function hideBanner() {
+      consentBanner.style.display = 'none';
+    }
+
+    // Initialize: hide banner if consent already given
+    const existingConsent = getConsent();
+    if (existingConsent === 'accepted' || existingConsent === 'declined') {
+      hideBanner();
+    }
+
+    // Accept handler
+    acceptBtn.addEventListener('click', function() {
+      setConsent('accepted');
+      hideBanner();
+      // Optionally, load analytics scripts here if needed
+      console.log('Cookies accepted.');
+    });
+
+    // Decline handler
+    declineBtn.addEventListener('click', function() {
+      setConsent('declined');
+      hideBanner();
+      // Optionally, disable analytics scripts
+      console.log('Cookies declined.');
+    });
+
+    // Settings handler (show a simple alert for demo)
+    settingsBtn.addEventListener('click', function() {
+      alert('Cookie Settings: You can manage your cookie preferences at any time through your browser settings. We use necessary, analytics, functional, and targeting cookies. Please refer to our Cookies Policy for details.');
+      // In a real implementation, you might show a modal with granular controls.
+    });
+
+    // Optional: If user clicks anywhere outside the banner, we could keep it visible
+  })();
+</script>
+
+</body>
+</html>

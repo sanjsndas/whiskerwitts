@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whisker Wits · Contact Us</title>
+    <!-- Font & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* ----- reset & base ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #fcf7f2;
+            color: #2d2a24;
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+
+        .wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: #fffcf9;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+            border-radius: 40px 40px 20px 20px;
+            overflow: hidden;
+            padding: 0 20px 20px;
+        }
+
+        /* ----- header & nav ----- */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 10px 12px;
+            border-bottom: 2px solid #f0e3d9;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3b2b22;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            background: #e5c9b1;
+            padding: 0 12px;
+            border-radius: 40px;
+            color: #2d1f17;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a3a2e;
+            font-weight: 600;
+            font-size: 1.05rem;
+            padding: 6px 4px;
+            border-bottom: 3px solid transparent;
+            transition: 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            border-bottom-color: #c79b7a;
+            color: #1f150e;
+        }
+
+        /* ----- contact content ----- */
+        .contact-content {
+            margin: 30px 0 40px;
+            padding: 10px 6px;
+        }
+
+        .contact-content h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #3e2c1e;
+            border-left: 8px solid #dbbca3;
+            padding-left: 20px;
+            margin: 2.2rem 0 1rem;
+        }
+
+        .contact-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .contact-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4f3827;
+            margin: 1.8rem 0 0.6rem;
+        }
+
+        .contact-content p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            color: #2f281f;
+            background: #faf3ec;
+            padding: 8px 18px;
+            border-radius: 60px 12px 12px 60px;
+            display: inline-block;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .contact-content p i {
+            color: #b48764;
+            margin-right: 8px;
+        }
+
+        .contact-content .text-block {
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            display: block;
+            max-width: 100%;
+        }
+
+        .highlight {
+            background: #ebd9cb;
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-weight: 600;
+        }
+
+        .contact-card {
+            background: #f5ede6;
+            padding: 22px 24px;
+            border-radius: 40px 16px 40px 16px;
+            margin: 20px 0;
+            border-left: 6px solid #c79b7a;
+        }
+
+        .contact-card i {
+            color: #906b4d;
+            margin-right: 10px;
+        }
+
+        .bullet-list {
+            background: #f8f0e9;
+            padding: 16px 28px;
+            border-radius: 30px;
+            margin: 10px 0 20px;
+            list-style: none;
+        }
+
+        .bullet-list li {
+            padding: 6px 0;
+            font-size: 1.05rem;
+            border-bottom: 1px dashed #e2d2c5;
+        }
+
+        .bullet-list li:last-child {
+            border-bottom: none;
+        }
+
+        .bullet-list li i {
+            color: #b48764;
+            width: 28px;
+        }
+
+        /* Contact grid layout */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 25px 0;
+        }
+
+        .contact-info-box {
+            background: #f8f0e9;
+            padding: 28px 24px;
+            border-radius: 40px 16px 40px 16px;
+        }
+
+        .contact-info-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-info-box .info-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2d2c5;
+        }
+
+        .contact-info-box .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info-box .info-item i {
+            font-size: 1.4rem;
+            color: #906b4d;
+            width: 32px;
+            text-align: center;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #f8f0e9;
+            padding: 28px 24px;
+            border-radius: 16px 40px 16px 40px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: 600;
+            margin-top: 14px;
+            margin-bottom: 4px;
+            color: #3b2b22;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e2d2c5;
+            border-radius: 30px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+            background: #fffcf9;
+            transition: 0.2s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: #b48764;
+            box-shadow: 0 0 0 4px rgba(180, 135, 100, 0.15);
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form .submit-btn {
+            background: #b48764;
+            color: #fff;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 18px;
+            transition: 0.2s;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .contact-form .submit-btn:hover {
+            background: #a07454;
+            transform: scale(1.02);
+        }
+
+        /* Map container */
+        .map-container {
+            margin: 25px 0 30px;
+            border-radius: 40px 16px 40px 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            border: 3px solid #f0e3d9;
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 45%;
+            /* 16:9 aspect ratio approx */
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Hours table */
+        .hours-table {
+            width: 100%;
+            background: #f8f0e9;
+            border-radius: 30px;
+            overflow: hidden;
+            margin: 15px 0 25px;
+        }
+
+        .hours-table td {
+            padding: 10px 20px;
+            border-bottom: 1px solid #e2d2c5;
+            font-size: 1.05rem;
+        }
+
+        .hours-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .hours-table .day {
+            font-weight: 600;
+            color: #4a3a2e;
+        }
+
+        .hours-table .time {
+            text-align: right;
+            color: #5a4a3c;
+        }
+
+        /* ----- footer with address & phone ----- */
+        footer {
+            margin-top: 40px;
+            padding: 30px 15px 20px;
+            border-top: 3px double #dccfc4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px 40px;
+            background: #f7efe8;
+            border-radius: 50px 50px 20px 20px;
+        }
+
+        .footer-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 30px;
+            font-size: 1.05rem;
+        }
+
+        .footer-info i {
+            color: #8b684b;
+            width: 24px;
+            text-align: center;
+        }
+
+        .footer-info .address,
+        .footer-info .phone {
+            background: #fffcf9;
+            padding: 4px 18px 4px 12px;
+            border-radius: 40px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .footer-copy {
+            font-size: 0.95rem;
+            color: #5b4b3b;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-copy i {
+            color: #b2774f;
+            margin: 0 4px;
+        }
+
+        /* responsive */
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: start;
+                gap: 12px;
+            }
+            nav ul {
+                gap: 6px 12px;
+            }
+            .contact-content p {
+                display: block;
+                border-radius: 20px;
+            }
+            footer {
+                flex-direction: column;
+                align-items: start;
+            }
+            .map-container {
+                padding-bottom: 60%;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .logo h1 {
+                font-size: 1.6rem;
+            }
+            .map-container {
+                padding-bottom: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <h1>Whisker Wits <span>🐾 grooming</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- contact content (1200+ words) -->
+        <div class="contact-content">
+            <h2><i class="fas fa-address-card" style="color:#b48764;"></i> Contact Whisker Wits</h2>
+            <p class="text-block"><i class="fas fa-paw"></i> We'd love to hear from you! Whether you have a question about our grooming services, want to book an appointment, or just want to say hello, our team is here to help. Reach out to us through any of the channels below.</p>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-box">
+                    <h3><i class="fas fa-map-pin"></i> Visit Us</h3>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>123 Purr Lane, Suite 2<br />Brooklyn, NY 11215</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (212) 555‑9474</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@whiskerwits.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon–Sat: 9:00 AM – 7:00 PM<br />Sunday: 10:00 AM – 5:00 PM</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-hashtag"></i>
+                        <span>@whiskerwits</span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+                    <form id="contactForm">
+                        <label for="fullName">Your Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="e.g., Sarah Johnson" required />
+
+                        <label for="emailAddress">Email Address *</label>
+                        <input type="email" id="emailAddress" name="emailAddress" placeholder="sarah@example.com" required />
+
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(212) 555‑1234" />
+
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject...</option>
+                            <option value="booking">Booking Inquiry</option>
+                            <option value="pricing">Pricing & Packages</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="complaint">Concern / Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help you and your cat..." required></textarea>
+
+                        <button type="submit" class="submit-btn"><i class="fas fa-paw"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Working Map -->
+            <h2><i class="fas fa-map"></i> Find Us</h2>
+            <p class="text-block">We're located in the heart of Brooklyn, easily accessible by public transportation and with street parking available. Come visit our cozy salon – your cat will love it!</p>
+
+            <div class="map-container">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.5420966204765!2d-73.989292524153!3d40.68838717138391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb7e74d%3A0x2c5b4e5a5f5f5f5f!2sBrooklyn%2C%20NY%2011215!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <h2><i class="fas fa-clock"></i> Business Hours</h2>
+        <p class="text-block">We're open six days a week to accommodate your busy schedule. Walk-ins are welcome, but we recommend booking an appointment to guarantee availability.</p>
+
+        <table class="hours-table">
+            <tr><td class="day">Monday</td><td class="time">9:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Tuesday</td><td class="time">9:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Wednesday</td><td class="time">9:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Thursday</td><td class="time">9:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Friday</td><td class="time">9:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Saturday</td><td class="time">9:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Sunday</td><td class="time">10:00 AM – 5:00 PM</td></tr>
+        </table>
+
+        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+
+        <h3><i class="fas fa-chevron-right"></i> How do I book an appointment?</h3>
+        <p class="text-block">You can book an appointment by calling us at +1 (212) 555‑9474, sending an email to hello@whiskerwits.com, or using the contact form above. We recommend booking at least 3–5 days in advance, especially during peak seasons.</p>
+
+        <h3><i class="fas fa-chevron-right"></i> Do you offer emergency grooming services?</h3>
+        <p class="text-block">Yes, we understand that emergencies happen. If your cat has a severe matting issue, a skin condition, or an urgent grooming need, please call us directly and we'll do our best to accommodate you as soon as possible.</p>
+
+        <h3><i class="fas fa-chevron-right"></i> Can I bring my cat for a free consultation?</h3>
+        <p class="text-block">Absolutely! We offer complimentary 15‑minute consultations to assess your cat's coat condition, discuss your grooming goals, and answer any questions. Just call or email us to schedule a consultation.</p>
+
+        <h3><i class="fas fa-chevron-right"></i> What payment methods do you accept?</h3>
+        <p class="text-block">We accept all major credit cards (Visa, Mastercard, American Express, Discover), debit cards, and cash. We also offer payment plans for our membership packages.</p>
+
+        <h3><i class="fas fa-chevron-right"></i> Do you offer discounts for multiple cats?</h3>
+        <p class="text-block">Yes! We offer a 10% discount on grooming services for households with two or more cats. Ask about our multi‑cat packages when you book.</p>
+
+        <h3><i class="fas fa-chevron-right"></i> Is there parking available near the salon?</h3>
+        <p class="text-block">Yes, there is metered street parking available directly outside our location. We're also conveniently located near the F and G subway lines, just a 5‑minute walk from the Bergen Street station.</p>
+
+        <h2><i class="fas fa-gem"></i> Why Choose Whisker Wits?</h2>
+        <p class="text-block">At Whisker Wits, we believe that every cat deserves a spa experience that's both relaxing and rejuvenating. Our team of certified feline groomers combines expertise with genuine love for cats. We use only the highest‑quality, hypoallergenic products and employ fear‑free handling techniques to ensure your cat feels safe and comfortable throughout the grooming process.</p>
+        <p class="text-block">We pride ourselves on our transparent communication, fair pricing, and commitment to excellence. Whether your cat needs a simple bath and brush or a full lion trim, we treat every cat with the individualized care they deserve. Our salon is clean, quiet, and designed specifically for feline comfort – no barking dogs, just peaceful purrs.</p>
+        <p class="text-block">We invite you to visit our salon and see the Whisker Wits difference for yourself. Our friendly staff is always happy to give you a tour, introduce you to our shop cat Oliver, and answer any questions you might have. We're not just groomers – we're cat lovers who understand the special bond between you and your feline companion.</p>
+
+        <div class="contact-card">
+            <i class="fas fa-star"></i> <strong>Book Your Appointment Today!</strong><br />
+            <span style="font-size: 1.05rem;">Give your cat the gift of a luxurious grooming experience. Call us at <strong>+1 (212) 555‑9474</strong> or use the contact form above to get started. We can't wait to meet you and your furry friend!</span>
+        </div>
+
+        <p class="text-block" style="margin-top: 20px;"><i class="fas fa-heart" style="color:#b2774f;"></i> Thank you for choosing Whisker Wits – where every cat is treated like family.</p>
+    </div>
+
+    <!-- footer with address & phone -->
+    <footer>
+        <div class="footer-info">
+            <span class="address"><i class="fas fa-map-pin"></i> 123 Purr Lane, Suite 2, Brooklyn, NY 11215</span>
+            <span class="phone"><i class="fas fa-phone"></i> +1 (212) 555‑9474</span>
+        </div>
+        <div class="footer-copy">
+            <i class="fas fa-cat"></i> Whisker Wits © 2026 · all purrs reserved.
+        </div>
+    </footer>
+</div>
+<!-- end wrapper -->
+
+<script>
+    // Simple form submission handler (demo)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('🐾 Thank you for your message! We\'ll get back to you within 24 hours. Purrs from Whisker Wits!');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

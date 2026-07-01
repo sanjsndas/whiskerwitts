@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whisker Wits · Terms of Service</title>
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* ----- reset & base ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fcf7f2;
+      color: #2d2a24;
+      line-height: 1.7;
+      padding: 0 20px;
+    }
+
+    .wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: #fffcf9;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+      border-radius: 40px 40px 20px 20px;
+      overflow: hidden;
+      padding: 0 20px 20px;
+    }
+
+    /* ----- header & nav ----- */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 10px 12px;
+      border-bottom: 2px solid #f0e3d9;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #3b2b22;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      background: #e5c9b1;
+      padding: 0 12px;
+      border-radius: 40px;
+      color: #2d1f17;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4a3a2e;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 6px 4px;
+      border-bottom: 3px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      border-bottom-color: #c79b7a;
+      color: #1f150e;
+    }
+
+    /* ----- terms content (2500+ words) ----- */
+    .terms-content {
+      margin: 30px 0 40px;
+      padding: 10px 6px;
+    }
+
+    .terms-content h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #3e2c1e;
+      border-left: 8px solid #dbbca3;
+      padding-left: 20px;
+      margin: 2.2rem 0 1rem;
+    }
+
+    .terms-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .terms-content h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #4f3827;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    .terms-content h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #5a3f2b;
+      margin: 1.4rem 0 0.4rem;
+    }
+
+    .terms-content p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      color: #2f281f;
+      background: #faf3ec;
+      padding: 8px 18px;
+      border-radius: 60px 12px 12px 60px;
+      display: inline-block;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .terms-content p i {
+      color: #b48764;
+      margin-right: 8px;
+    }
+
+    .terms-content .text-block {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      display: block;
+      max-width: 100%;
+    }
+
+    .highlight {
+      background: #ebd9cb;
+      padding: 4px 14px;
+      border-radius: 40px;
+      font-weight: 600;
+    }
+
+    .terms-card {
+      background: #f5ede6;
+      padding: 22px 24px;
+      border-radius: 40px 16px 40px 16px;
+      margin: 20px 0;
+      border-left: 6px solid #c79b7a;
+    }
+
+    .terms-card i {
+      color: #906b4d;
+      margin-right: 10px;
+    }
+
+    .bullet-list {
+      background: #f8f0e9;
+      padding: 16px 28px;
+      border-radius: 30px;
+      margin: 10px 0 20px;
+      list-style: none;
+    }
+
+    .bullet-list li {
+      padding: 6px 0;
+      font-size: 1.05rem;
+      border-bottom: 1px dashed #e2d2c5;
+    }
+
+    .bullet-list li:last-child {
+      border-bottom: none;
+    }
+
+    .bullet-list li i {
+      color: #b48764;
+      width: 28px;
+    }
+
+    .number-list {
+      background: #f8f0e9;
+      padding: 16px 28px;
+      border-radius: 30px;
+      margin: 10px 0 20px;
+      list-style: decimal;
+      padding-left: 50px;
+    }
+
+    .number-list li {
+      padding: 6px 0;
+      font-size: 1.05rem;
+      border-bottom: 1px dashed #e2d2c5;
+    }
+
+    .number-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* ----- footer with address & phone ----- */
+    footer {
+      margin-top: 40px;
+      padding: 30px 15px 20px;
+      border-top: 3px double #dccfc4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px 40px;
+      background: #f7efe8;
+      border-radius: 50px 50px 20px 20px;
+    }
+
+    .footer-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 30px;
+      font-size: 1.05rem;
+    }
+
+    .footer-info i {
+      color: #8b684b;
+      width: 24px;
+      text-align: center;
+    }
+
+    .footer-info .address, .footer-info .phone {
+      background: #fffcf9;
+      padding: 4px 18px 4px 12px;
+      border-radius: 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .footer-copy {
+      font-size: 0.95rem;
+      color: #5b4b3b;
+      letter-spacing: 0.3px;
+    }
+
+    .footer-copy i {
+      color: #b2774f;
+      margin: 0 4px;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      header { flex-direction: column; align-items: start; gap: 12px; }
+      nav ul { gap: 6px 12px; }
+      .terms-content p { display: block; border-radius: 20px; }
+      footer { flex-direction: column; align-items: start; }
+    }
+    @media (max-width: 450px) {
+      .logo h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="logo">
+      <h1>Whisker Wits <span>🐾 grooming</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- terms content (2500+ words) -->
+  <div class="terms-content">
+    <h2><i class="fas fa-file-contract" style="color:#b48764;"></i> Terms of Service</h2>
+    <p class="text-block"><i class="fas fa-paw"></i> Welcome to Whisker Wits. By using our website, booking our grooming services, or interacting with us in any way, you agree to be bound by these Terms of Service. Please read them carefully. If you do not agree, please do not use our services.</p>
+
+    <h2><i class="fas fa-check-circle"></i> 1. Acceptance of Terms</h2>
+    <p class="text-block">By accessing or using the Whisker Wits website, mobile applications, or any related services (collectively, the "Services"), you agree to comply with and be legally bound by these Terms of Service, as well as our Privacy Policy and Cookies Policy. These terms apply to all users, including but not limited to visitors, customers, and contributors.</p>
+
+    <h3><i class="fas fa-user-plus"></i> 1.1 Eligibility</h3>
+    <p class="text-block">You must be at least 18 years old to book services on behalf of a pet. By using our Services, you represent that you have the legal capacity to enter into a binding agreement. If you are booking on behalf of a minor or another person, you represent that you have the authority to do so.</p>
+
+    <h3><i class="fas fa-sync-alt"></i> 1.2 Modifications to Terms</h3>
+    <p class="text-block">We reserve the right to update or modify these Terms at any time without prior notice. The updated version will be posted on this page with the effective date. Your continued use of the Services after any changes constitutes acceptance of the new Terms. We encourage you to review this page periodically.</p>
+
+    <h2><i class="fas fa-calendar-check"></i> 2. Booking and Appointments</h2>
+    <p class="text-block">All grooming services are provided by appointment only. By booking an appointment, you agree to the following:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-clock"></i> <strong>Arrival:</strong> Please arrive on time. Late arrivals may result in shortened sessions or rescheduling.</li>
+      <li><i class="fas fa-times-circle"></i> <strong>Cancellations:</strong> We require at least 24 hours' notice for cancellations. Late cancellations or no-shows may incur a fee equal to 50% of the service cost.</li>
+      <li><i class="fas fa-heartbeat"></i> <strong>Health Disclosure:</strong> You must disclose any health conditions, allergies, or behavioral issues your cat may have. We reserve the right to refuse service if grooming poses a risk to your cat or our staff.</li>
+      <li><i class="fas fa-file-signature"></i> <strong>Consent:</strong> By booking, you consent to our groomers handling your cat and using appropriate grooming tools and products.</li>
+    </ul>
+
+    <div class="terms-card">
+      <i class="fas fa-exclamation-triangle"></i> <strong>Important:</strong> We reserve the right to stop a grooming session if your cat becomes overly stressed, aggressive, or if we detect a health concern. You will be charged for the time and services provided up to that point.
+    </div>
+
+    <h2><i class="fas fa-dollar-sign"></i> 3. Pricing and Payment</h2>
+    <p class="text-block">All prices are listed in US dollars and are subject to change without notice. We strive to keep our pricing fair and transparent. The following payment terms apply:</p>
+    <ul class="number-list">
+      <li>Payment is due at the time of service unless otherwise agreed.</li>
+      <li>We accept major credit cards, debit cards, and cash.</li>
+      <li>For packages or memberships, payment is due upfront and is non-refundable except as provided in our refund policy.</li>
+      <li>Additional charges may apply for extra services, matted coats, or difficult behavior. You will be informed of any extras before they are performed.</li>
+    </ul>
+
+    <h3><i class="fas fa-undo-alt"></i> 3.1 Refund Policy</h3>
+    <p class="text-block">We want you to be completely satisfied with our services. If you are unhappy with the grooming results, please contact us within 24 hours. We will work to resolve the issue, which may include a complimentary re-groom or partial refund at our discretion. Refunds are not provided for services already rendered due to the personalized nature of grooming.</p>
+
+    <h2><i class="fas fa-shield-virus"></i> 4. Health and Safety</h2>
+    <p class="text-block">Your cat's well-being is our top priority. By using our services, you agree to the following health and safety terms:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-syringe"></i> <strong>Vaccinations:</strong> We recommend that your cat is up-to-date on vaccinations, though we do not require proof. However, we reserve the right to refuse service if we suspect a contagious condition.</li>
+      <li><i class="fas fa-bug"></i> <strong>Parasites:</strong> Please ensure your cat is free of fleas, ticks, and other parasites. If we detect parasites, we may treat them at an additional cost or refuse service.</li>
+      <li><i class="fas fa-first-aid"></i> <strong>Emergencies:</strong> In the event of a medical emergency, we will attempt to contact you immediately. If we cannot reach you, we will seek veterinary care at your expense.</li>
+      <li><i class="fas fa-hand-holding-heart"></i> <strong>Behavioral Safety:</strong> We use fear-free handling techniques, but we cannot guarantee that every cat will tolerate grooming. We will stop if we believe continuing is unsafe.</li>
+    </ul>
+
+    <h2><i class="fas fa-gavel"></i> 5. Liability and Disclaimer</h2>
+    <p class="text-block">Whisker Wits provides grooming services with professional care and expertise. However, certain risks are inherent in pet grooming, including but not limited to:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-cut"></i> Accidental nicks or cuts (we use safety equipment to minimize these risks).</li>
+      <li><i class="fas fa-water"></i> Reactions to products (we use hypoallergenic products but cannot predict individual allergies).</li>
+      <li><i class="fas fa-heart"></i> Stress-related events in sensitive cats.</li>
+    </ul>
+    <p class="text-block">By using our Services, you agree to release Whisker Wits, its owners, employees, and affiliates from any liability for injury, illness, or death that may occur during or after grooming, except in cases of gross negligence or willful misconduct.</p>
+
+    <h3><i class="fas fa-exclamation-circle"></i> 5.1 No Warranty</h3>
+    <p class="text-block">Our Services are provided "as is" and "as available." We make no warranties, express or implied, regarding the accuracy, reliability, or completeness of any content on our website or the results of our grooming services. We do not guarantee that your cat will look exactly like a photo or that all issues (e.g., matting) can be fully resolved.</p>
+
+    <h2><i class="fas fa-copyright"></i> 6. Intellectual Property</h2>
+    <p class="text-block">All content on our website, including text, graphics, logos, images, and software, is the property of Whisker Wits or its content suppliers and is protected by copyright, trademark, and other laws. You may not reproduce, distribute, or create derivative works without our prior written consent. You are granted a limited license to access and use the website for personal, non-commercial purposes.</p>
+
+    <h3><i class="fas fa-camera"></i> 6.1 User-Generated Content</h3>
+    <p class="text-block">If you submit reviews, photos, or other content to us, you grant us a perpetual, royalty-free, irrevocable license to use, reproduce, modify, and display that content in connection with our business. You represent that you have the right to grant this license.</p>
+
+    <h2><i class="fas fa-laptop"></i> 7. Website Use and Acceptable Conduct</h2>
+    <p class="text-block">When using our website, you agree not to:</p>
+    <ul class="bullet-list">
+      <li><i class="fas fa-ban"></i> Violate any applicable laws or regulations.</li>
+      <li><i class="fas fa-virus"></i> Transmit harmful code, viruses, or malware.</li>
+      <li><i class="fas fa-user-secret"></i> Impersonate any person or entity.</li>
+      <li><i class="fas fa-comment-slash"></i> Post defamatory, abusive, or obscene content.</li>
+      <li><i class="fas fa-hacker"></i> Attempt to gain unauthorized access to our systems or data.</li>
+    </ul>
+
+    <h2><i class="fas fa-phone"></i> 8. Communication and Consent</h2>
+    <p class="text-block">By providing your contact information, you consent to receive communications from us via email, phone, or SMS regarding appointments, promotions, and service updates. You may opt out of marketing communications at any time by following the unsubscribe instructions or contacting us directly.</p>
+
+    <h2><i class="fas fa-times"></i> 9. Termination of Services</h2>
+    <p class="text-block">We reserve the right to terminate or suspend your access to our Services at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users, our staff, or our business interests. Upon termination, you remain liable for any outstanding fees.</p>
+
+    <h2><i class="fas fa-gavel"></i> 10. Governing Law and Dispute Resolution</h2>
+    <p class="text-block">These Terms shall be governed by and construed in accordance with the laws of the State of New York, without regard to conflict of law principles. Any dispute arising out of or relating to these Terms or our Services shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. The arbitration shall take place in Brooklyn, New York, and the decision of the arbitrator shall be final and binding.</p>
+
+    <div class="terms-card" style="border-left-color: #ae8b73;">
+      <i class="fas fa-gavel"></i> <strong>Class Action Waiver:</strong> To the fullest extent permitted by law, you agree that any dispute resolution proceedings will be conducted on an individual basis and not as a class, consolidated, or representative action.
+    </div>
+
+    <h2><i class="fas fa-clipboard-list"></i> 11. Additional Provisions</h2>
+    <h4><i class="fas fa-chevron-right"></i> 11.1 Severability</h4>
+    <p class="text-block">If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> 11.2 Waiver</h4>
+    <p class="text-block">Our failure to enforce any right or provision of these Terms shall not be deemed a waiver of such right or provision.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> 11.3 Assignment</h4>
+    <p class="text-block">You may not assign these Terms or any of your rights or obligations hereunder without our prior written consent. We may assign our rights and obligations without restriction.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> 11.4 Entire Agreement</h4>
+    <p class="text-block">These Terms, together with our Privacy Policy and Cookies Policy, constitute the entire agreement between you and Whisker Wits regarding the use of our Services and supersede all prior agreements.</p>
+
+    <h2><i class="fas fa-question-circle"></i> 12. Frequently Asked Questions about Terms</h2>
+    <h4><i class="fas fa-chevron-right"></i> What happens if my cat injures a groomer?</h4>
+    <p class="text-block">You are responsible for your cat's behavior. If your cat causes injury to our staff or property, you may be held liable for damages.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> Can I bring my cat's own shampoo?</h4>
+    <p class="text-block">Yes, you may bring products you prefer. However, we reserve the right to decline use if we believe they are unsuitable. We recommend our specially formulated products for best results.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> Do you offer a satisfaction guarantee?</h4>
+    <p class="text-block">We strive for 100% satisfaction. If you are unhappy, please let us know within 24 hours, and we will work to make it right.</p>
+
+    <h4><i class="fas fa-chevron-right"></i> What if I need to reschedule?</h4>
+    <p class="text-block">You may reschedule without penalty if you provide at least 24 hours' notice. Rescheduling within 24 hours may be subject to availability and may incur a fee.</p>
+
+    <h2><i class="fas fa-check-double"></i> 13. Acceptance of These Terms</h2>
+    <p class="text-block">By using our website, booking an appointment, or otherwise interacting with Whisker Wits, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree, please refrain from using our Services.</p>
+
+    <p class="text-block" style="margin-top: 20px;"><i class="fas fa-heart" style="color:#b2774f;"></i> Thank you for choosing Whisker Wits. We look forward to providing your cat with exceptional care and service.</p>
+  </div>
+
+  <!-- footer with address & phone -->
+  <footer>
+    <div class="footer-info">
+      <span class="address"><i class="fas fa-map-pin"></i> 123 Purr Lane, Suite 2, Brooklyn, NY 11215</span>
+      <span class="phone"><i class="fas fa-phone"></i> +1 (212) 555‑9474</span>
+    </div>
+    <div class="footer-copy">
+      <i class="fas fa-cat"></i> Whisker Wits © 2026 · all purrs reserved.
+    </div>
+  </footer>
+</div>
+<!-- end wrapper -->
+</body>
+</html>
